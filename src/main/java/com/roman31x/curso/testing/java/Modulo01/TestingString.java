@@ -6,8 +6,15 @@ public class TestingString {
      * create Test y seleccionar la libreria JUNIT-4 posteriormente
      * se creara una carpeta en la cual se podran realizar los test */
 
-    public String pruebaN1(String cadena, int numero){
-        return null;
+    public static String pruebaN1(String cadena, int numero){
+
+        String palabra = "";
+
+        for (int i = 0; i < numero; i++) {
+            palabra += cadena;
+        }
+
+        return palabra;
     }
 
 }
