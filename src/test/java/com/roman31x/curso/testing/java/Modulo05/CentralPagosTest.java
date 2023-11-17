@@ -28,7 +28,7 @@ public class CentralPagosTest {
         /**PROBANDO LA EJECUCIÓN DEL MÉTODO*/
         boolean prueba01 = pedidoPago.realizarPago(1000);
 
-        /**FINALMENTE ES LA COMPROBACIÓN DEL RESULTADDO*/
+        /**FINALMENTE ES LA COMPROBACIÓN DEL RESULTADO*/
         assertTrue(prueba01);
     }
 
