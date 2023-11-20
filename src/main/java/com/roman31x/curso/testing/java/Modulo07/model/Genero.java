@@ -1,0 +1,9 @@
+package com.roman31x.curso.testing.java.Modulo07.model;
+
+//CREAMOS UNA CLASES DEL TIPO ENUM PARA PODER IMPLEMENTAR
+//LAS VARIABLES DE SIGNACION
+public enum Genero {
+
+    ACCION, COMEDIA, DRAMA, HORROR, TRILLER
+
+}
