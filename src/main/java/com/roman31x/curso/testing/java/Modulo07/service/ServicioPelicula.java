@@ -19,6 +19,13 @@ public class ServicioPelicula {
 
         return repositorioPelicula.seleccionTodo().stream().
                 filter(pelicula -> pelicula.getGenero() == genero).collect(Collectors.toList());
+
     }
 
+    public Collection<Pelicula> buscarPeliculaDuracion(int duracion) {
+
+        return repositorioPelicula.seleccionTodo().stream().
+                filter(pelicula -> pelicula.getMinutos() <= duracion).collect(Collectors.toList());
+
+    }
 }
