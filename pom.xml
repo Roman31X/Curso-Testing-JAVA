@@ -22,6 +22,8 @@
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.mockito/mockito-core -->
+        <!-- La librería de MOCKITO nos permite realizar pruebas creando un entorno de simulacion con carga
+         de información en los objetos -->
         <dependency>
             <groupId>org.mockito</groupId>
             <artifactId>mockito-core</artifactId>
@@ -30,12 +32,21 @@
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.springframework/spring-jdbc -->
+        <!-- IMPORTAMOS ESTA LIBRERÍA PARA PODER HACER USO DE LOS DRIVER DE JDBC PARA CONSULTAS EN BASE DE DATOS -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-jdbc</artifactId>
             <version>6.0.13</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/com.h2database/h2 -->
+        <!-- ESTA LIBRERÍA NOS PERMITE CREAR BASE DE DATOS DE PRUEBAS EN MEMORIA -->
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <version>2.2.224</version>
+            <scope>test</scope>
+        </dependency>
 
     </dependencies>
 
