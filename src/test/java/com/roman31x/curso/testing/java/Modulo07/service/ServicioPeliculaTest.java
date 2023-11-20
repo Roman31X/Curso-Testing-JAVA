@@ -43,7 +43,7 @@ public class ServicioPeliculaTest {
 
         Collection<Pelicula> peliculas = serviciopelicula.buscarGeneroPelicula(Genero.COMEDIA);
 
-        List<Integer> peliculaID = peliculas.stream().map(pelicula -> pelicula.getId()).collect(Collectors.toList());
+        List<Integer> peliculaID = getIDPeliculas(peliculas);
 
         assertThat(peliculaID, CoreMatchers.is(Arrays.asList(3,6)));
 
@@ -54,10 +54,17 @@ public class ServicioPeliculaTest {
 
         Collection<Pelicula> peliculas = serviciopelicula.buscarPeliculaDuracion(120);
 
-        List<Integer> peliculaID = peliculas.stream().map(pelicula -> pelicula.getId()).collect(Collectors.toList());
+        //Linea de codigo simplificado implementando el [return del método getInteger] creado
+        //para obtener un listado de las ID de las peliculas
+        List<Integer> peliculaID = getIDPeliculas(peliculas);
 
         assertThat(peliculaID, CoreMatchers.is(Arrays.asList(2,3,4,5,6)));
 
+    }
+
+    /**MÉTODO CREADO ´PARA EL RETORNO DE LAS ID DE LAS PELICULAS*/
+    private static List<Integer> getIDPeliculas(Collection<Pelicula> peliculas) {
+        return peliculas.stream().map(Pelicula::getId).collect(Collectors.toList());
     }
 
 }
