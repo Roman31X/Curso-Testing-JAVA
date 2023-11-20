@@ -6,6 +6,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 
 import java.util.Collection;
+import java.util.Objects;
 
 public class RepositorioPeliculasJDBC implements RepositorioPeliculas {
 
@@ -17,7 +18,10 @@ public class RepositorioPeliculasJDBC implements RepositorioPeliculas {
 
     @Override
     public Pelicula buscarID(long id) {
-        return null;
+
+        Object[] argumento = { id };
+
+        return jdbcTemplate.queryForObject("select * from pelicula where id=?",argumento,peliculaMapeada);
     }
 
     @Override
