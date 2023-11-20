@@ -70,6 +70,20 @@ public class RepositorioPeliculasJDBCTest {
 
         assertThat(peliculaID, is(new Pelicula(2,"IRON-MAN",113,Genero.TRILLER)
                 ));
+
+    }
+
+    @Test
+    public void insertar_pelicula_BaseDatos(){
+
+        Pelicula pelicula08 = new Pelicula("MATRIX",136,Genero.ACCION);
+
+        repositorioPeliculasJDBC.guardarActualizacion(pelicula08);
+
+        Pelicula peliculaID = repositorioPeliculasJDBC.buscarID(4);
+
+        assertThat(peliculaID,is(new Pelicula(4,"MATRIX",136,Genero.ACCION)));
+
     }
 
     //Esta anotación nos permite realizar esta ejecucion despues de cada TEST

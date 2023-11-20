@@ -32,7 +32,10 @@ public class RepositorioPeliculasJDBC implements RepositorioPeliculas {
 
     @Override
     public void guardarActualizacion(Pelicula pelicula) {
-
+        jdbcTemplate.update("insert into pelicula (nombre,minutos,genero) values (?,?,?)",
+                pelicula.getNombre(),
+                pelicula.getMinutos(),
+                pelicula.getGenero().toString());
     }
 
     //CREAMOS UNA SELECCIÓN GENERAL DE L ABASE DE DATOS PARA IMPLEMENTAR EN EL RESTO DE
