@@ -19,4 +19,28 @@ public class Pelicula {
         this.genero = genero;
     }
 
+    public Integer getId() {
+        return id;
+    }
+    public void setId(Integer id) {
+        this.id = id;
+    }
+    public String getNombre() {
+        return nombre;
+    }
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+    public int getMinutos() {
+        return minutos;
+    }
+    public void setMinutos(int minutos) {
+        this.minutos = minutos;
+    }
+    public Genero getGenero() {
+        return genero;
+    }
+    public void setGenero(Genero genero) {
+        this.genero = genero;
+    }
 }
