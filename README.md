@@ -38,4 +38,29 @@ pruebas unitarias.
 entre ellos.
 - Es útil para aislar el código bajo prueba de sus dependencias.
 
+## Integración con Maven
+- [x] Agregar la dependencia de Mockito en el archivo ***pom.xml***.
+```xml
+<dependency>
+    <groupId>org.mockito</groupId>
+    <artifactId>mockito-core</artifactId>
+    <version>4.0.0</version>
+    <scope>test</scope>
+</dependency>
+```
 
+## Beneficios de implementar Mockito
+- Permite aislar el código bajo prueba, enfocándose en su comportamiento.
+- Facilita la simulación de situaciones difíciles de reproducir en un entorno
+real.
+- Mejora la cobertura de pruebas al permitir probar casos de borde y fallos 
+de dependencias.
+
+## Buenas prácticas con Mockito
+- Usar mocks solo para dependencias externas y no para el código que está 
+siendo probado.
+- Verificar interacciones con los mocks utilizando verify().
+- Evitar la sobreutilización de mocks, ya que puede hacer que las pruebas sean 
+difíciles de entender y mantener.
+- Utilizar @Mock y @InjectMocks para inyección de dependencias en los objetos
+simulados.
