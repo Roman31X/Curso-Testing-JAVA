@@ -9,7 +9,7 @@ public class JuegoDadoTest {
 
     @Test
     public void primer_intento_Pierde_numero_menor(){
-        /**Simulamos el lanzamiento del dado con las libreria de MOCKITO*/
+        /**Simulamos el lanzamiento del dado con las librerías de MOCKITO*/
 
         Dado dado01 = Mockito.mock(Dado.class);
 
@@ -22,7 +22,7 @@ public class JuegoDadoTest {
 
     @Test
     public void segundo_intento_Gana_numero_random(){
-        /**Simulamos el lanzamiento del dado con las libreria de MOCKITO*/
+        /**Simulamos el lanzamiento del dado con las librerías de MOCKITO*/
 
         Dado dado02 = Mockito.mock(Dado.class);
 

@@ -5,14 +5,14 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class TestingJunit02Test {
-    /**Para esta prueba de testing no realizaremos mediante la implemetacion
-     * del metodo principal de main sino implementaremos la notacion
-     * @test ya que desde este modo nos permitira sus ejecución y mostrar en
+    /**Para esta prueba de testing no realizaremos mediante la implementación
+     * del método principal de main si no implementaremos la notación
+     * @test ya que desde este modo nos permitirá su ejecución y mostrar en
      * consola la aprobación de estar correcto*/
 
     @Test
     public void Prueba01(){
-        //Para esta ejecución obtenedremos un resultado de 10 en la multiplicación
+        //Para esta ejecución obtendremos un resultado de 10 en la multiplicación
         Assert.assertEquals(10,TestingJunit02.Multiplicar(5,2));
 
     }
@@ -20,7 +20,7 @@ public class TestingJunit02Test {
     @Test
     public void Prueba02(){
         //De igual manera al realizar la siguiente prueba nos arrojara un error
-        //debiso a la respuesta no es la esperada
+        //debido a la respuesta no es la esperada
         //Assert.assertEquals(5,TestingJunit02.Multiplicar(2,5));
 
         Assert.assertEquals(10,TestingJunit02.Multiplicar(2,5));

@@ -7,11 +7,11 @@ import org.mockito.Mockito;
 import static org.junit.Assert.*;
 
 public class CentralPagosTest {
-    //NOMBRAMOS VARIABLE A IMPLEMENTAR EN LOS METODOS DE TEST
+    //NOMBRAMOS VARIABLE A IMPLEMENTAR EN LOS MÉTODOS DE TEST
     private TransferenciasPagos pagosRealizado;
     private CentralPagos pedidoPago;
 
-    /**ANOTACIÓN PARA INDICAR AL COMPILADOR QUE ESTE METODO SE DEBE EJECUTAR
+    /**ANOTACIÓN PARA INDICAR AL COMPILADOR QUE ESTE MÉTODO SE DEBE EJECUTAR
      * PRIMERO QUE LOS MÉTODOS DE TEST PARA DE ESTA MANERA PODER FUNCIONAR CORRECTAMENTE*/
     @Before
     public void general(){

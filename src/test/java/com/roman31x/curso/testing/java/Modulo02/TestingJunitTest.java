@@ -4,10 +4,10 @@ import org.junit.Assert;
 
 public class TestingJunitTest {
 
-    /**Ahora implementando la libreria de JUNIT podemos hacer uso de las
-     * clases de Assert.asserEquals: la cual nos permitira realizar un testing
+    /**Ahora implementando la librería de JUnit podemos hacer uso de las
+     * clases de Assert.asserEquals: la cual nos permitirá realizar un testing
      * mucho más eficiente con el método creado en la clase del modulo02
-     * ya que este método nos proporciona si hay igualdad entre el valor esperado con
+     * Ya que este método nos proporciona si hay igualdad entre el valor esperado con
      * relación con el método asignado a evaluar*/
 
     public static void main(String[] args) {
