@@ -20,7 +20,7 @@ public class ServicioPeliculaTest {
     private ServicioPelicula serviciopelicula;
 
     /**IMPLEMENTAMOS LA NOTACIÓN  [@Before] PARA PODER USAR ESTE METODO EN EL LLAMADO DE
-     * LOS DEMAS @TEST QUE NECESITAS LA IMPLEMENTACIÓN DE LA LISTA CREADA DENTRO DEL MÉTODO*/
+     * LOS DEMÁS @TEST QUE NECESITAS LA IMPLEMENTACIÓN DE LA LISTA CREADA DENTRO DEL MÉTODO*/
     @Before
     public void setUp() throws Exception {
         RepositorioPeliculas repositorioPeliculas = Mockito.mock(RepositorioPeliculas.class);
@@ -54,8 +54,8 @@ public class ServicioPeliculaTest {
 
         Collection<Pelicula> peliculas = serviciopelicula.buscarPeliculaDuracion(120);
 
-        //Linea de codigo simplificado implementando el [return del método getInteger] creado
-        //para obtener un listado de las ID de las peliculas
+        //Línea de código simplificado implementando el [return del método getInteger] creado
+        //para obtener un listado de las ID de las películas
         List<Integer> peliculaID = getIDPeliculas(peliculas);
 
         assertThat(peliculaID, CoreMatchers.is(Arrays.asList(2,3,4,5,6)));

@@ -30,13 +30,13 @@ public class RepositorioPeliculasJDBCTest {
     @Before
     public void setUp() throws SQLException {
 
-        /**Implementando los dirver de jbdc creamos una base de datos en memoria
+        /**Implementando el driver de jbdc creamos una base de datos en memoria
          * para realizar las pruebas correspondientes con MODO MYSQL*/
 
         dataSource = new DriverManagerDataSource("jdbc:h2:mem:test;MODE=MYSQL","diego","diego");
 
-        /**TENIENDO EL SCRIP CON LA SENTENCIAS EN SQL podemos hacer uso de una clase
-         * para que este se implementado en la creacion de la tabla como del contenido
+        /**TENIENDO EL SCRIP CON LAS SENTENCIAS EN SQL podemos hacer uso de una clase
+         * para que este sea implementado en la creación de la tabla como del contenido
          * dentro de ella*/
 
         ScriptUtils.executeSqlScript(dataSource.getConnection(),new ClassPathResource("sql-scripts/test-data.sql"));
@@ -51,10 +51,10 @@ public class RepositorioPeliculasJDBCTest {
     @Test
     public void Obtener_todas_las_peliculas_BaseDato() throws SQLException {
 
-        //se realiza la selección de todas la peliculas en la tabla de la base de datos
+        //se realiza la selección de todas las películas en la tabla de la base de datos
         Collection<Pelicula> peliculas  = repositorioPeliculasJDBC.seleccionTodo();
 
-        //MEDIANTE LA CLASE ASSERT realiso la consulta si las peliculas obtenidas son las correctas en la base de datos
+        //MEDIANTE LA CLASE ASSERT realizo la consulta si las películas obtenidas son las correctas en la base de datos
         assertThat(peliculas, is(Arrays.asList(
                 new Pelicula(1,"SUPERMAN",152, Genero.ACCION),
                 new Pelicula(2,"IRON-MAN",113,Genero.TRILLER),
