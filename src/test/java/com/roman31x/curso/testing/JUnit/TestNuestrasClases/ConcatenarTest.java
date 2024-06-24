@@ -1,9 +1,7 @@
-package com.roman31x.curso.testing.JUnit.Modulo01;
+package com.roman31x.curso.testing.JUnit.TestNuestrasClases;
 
 import org.junit.Assert;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class ConcatenarTest {
 

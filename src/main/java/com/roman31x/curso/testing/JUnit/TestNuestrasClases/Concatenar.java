@@ -1,4 +1,4 @@
-package com.roman31x.curso.testing.JUnit.Modulo01;
+package com.roman31x.curso.testing.JUnit.TestNuestrasClases;
 
 public class Concatenar {
     public String contactenarPalabras(String palabra1, String palabra2){

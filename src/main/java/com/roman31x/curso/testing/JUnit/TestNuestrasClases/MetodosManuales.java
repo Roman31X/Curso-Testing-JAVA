@@ -1,4 +1,4 @@
-package com.roman31x.curso.testing.JUnit.Modulo01;
+package com.roman31x.curso.testing.JUnit.TestNuestrasClases;
 
 import org.junit.*;
 
