@@ -21,7 +21,21 @@ public class ConcatenarTest {
         //Validación de respuesta con mensaje
         /*Assert.assertEquals("La respuesta esperada no es la correcta",
                 "Hola Mundo",resultado);*/
-
     }
+
+    /*
+    @Test
+    public void testConcatenarFallo(){
+        Concatenar prueba = new Concatenar();
+        String resultado = prueba.contactenarPalabras("Hola","Mundo");
+        Assert.assertEquals("La respuesta no coinciden con lo esperado","Hola Mundo",resultado);
+    }
+
+    @Test
+    public void testConcatenarError(){
+        Concatenar prueba = new Concatenar();
+        String resultado = prueba.contactenarPalabras(null,"Mundo");
+        Assert.assertEquals(null,resultado);
+    }*/
 
 }
