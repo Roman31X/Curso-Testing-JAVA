@@ -30,7 +30,7 @@ del código.
 necesarios para las pruebas.
 
 ## Más datos sobre JUnit
-<a  href="">JUnit</a>
+<a  href="https://github.com/Roman31X/Curso-Testing-JAVA/tree/master/src/main/java/com/roman31x/curso/testing/JUnit">JUnit</a>
 
 # Curso Mockito con Java
 
