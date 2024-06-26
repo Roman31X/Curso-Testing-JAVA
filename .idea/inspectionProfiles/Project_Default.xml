@@ -7,8 +7,8 @@
     </inspection_tool>
     <inspection_tool class="MultipleExceptionsDeclaredOnTestMethod" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="ParameterizedParametersStaticCollection" enabled="true" level="WARNING" enabled_by_default="true" />
-    <inspection_tool class="TestCaseWithNoTestMethods" enabled="true" level="WARNING" enabled_by_default="true">
-      <scope name="Tests" level="WARNING" enabled="true">
+    <inspection_tool class="TestCaseWithNoTestMethods" enabled="false" level="WARNING" enabled_by_default="false">
+      <scope name="Tests" level="WARNING" enabled="false">
         <option name="ignoreSupers" value="true" />
       </scope>
       <option name="ignoreSupers" value="true" />
