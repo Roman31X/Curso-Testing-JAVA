@@ -53,4 +53,11 @@ public class ConexionBDTestTryCatch {
 
         Assert.assertThat(con, Matchers.nullValue());
     }
+
+    @Test(expected = SQLException.class)
+    public void conexionFallidaAnotaciones() throws SQLException,ClassNotFoundException{
+        conexionBD = new ConexionEstructurada(BD,USER_FAIL,PASSWORD);
+        conexionBD.getConnection();
+        Assert.fail("La conexión a fallado");
+    }
 }
