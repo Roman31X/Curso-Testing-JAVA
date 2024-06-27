@@ -21,6 +21,13 @@
             <version>4.13</version>
         </dependency>
 
+        <dependency>
+            <groupId>pl.pragmatists</groupId>
+            <artifactId>JUnitParams</artifactId>
+            <version>1.1.1</version>
+            <scope>test</scope>
+        </dependency>
+
         <!-- https://mvnrepository.com/artifact/org.mockito/mockito-core -->
         <!-- La librería de MOCKITO nos permite realizar pruebas creando un entorno de simulacion con carga
          de información en los objetos -->
